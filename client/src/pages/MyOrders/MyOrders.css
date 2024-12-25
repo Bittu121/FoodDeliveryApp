@@ -1,0 +1,112 @@
+.my-orders {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+.my-orders h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.orders-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 0 10px;
+}
+.order-card {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.order-icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+.order-details {
+  margin-bottom: 10px;
+}
+.order-items {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.order-amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+.order-status {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  width: 100%;
+}
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.status-dot.delivered {
+  background-color: #4caf50;
+}
+.status-dot.pending {
+  background-color: #ffc107;
+}
+.status-dot.cancelled {
+  background-color: #f44336;
+}
+.track-order-btn {
+  border: none;
+  padding: 5px 5px;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: stretch;
+  transition: background-color 0.3s;
+}
+.track-order-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+  .orders-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .orders-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .orders-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,126 @@
+.order {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.order h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 14px;
+  color: #505050;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+.order-item-food,
+.order-item-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-item-name {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.order-item-address {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.order-item select {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: max(10vw, 120px);
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-item select:hover {
+  background-color: #f0e4e4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item select:focus {
+  border-color: tomato;
+}
+
+.order-item p {
+  margin: 0;
+}
+
+.order-item p:last-child {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 1000px) {
+  .order-item {
+    font-size: 12px;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .order-item select {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .order-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-item-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-item {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+
+  .order-item img {
+    margin: 0 auto;
+  }
+
+  .order-item select {
+    width: 100%;
+  }
+}

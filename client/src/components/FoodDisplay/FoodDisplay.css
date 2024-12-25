@@ -1,0 +1,81 @@
+.food-display {
+  margin-top: 30px;
+}
+.food-display h2 {
+  font-size: max(2vw, 24px);
+  font-weight: 600;
+  text-align: center;
+}
+
+.food-display-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+/* Pagination Container */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+/* Pagination Buttons */
+.pagination-btn {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #ff4c3b;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.pagination-numbers {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-page {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-page:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.pagination-page.active {
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination-page.active:hover {
+  background-color: #ff4c3b;
+}

@@ -1,0 +1,45 @@
+.verify {
+  min-height: 60vh;
+  display: grid;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff1a75);
+  background-size: 300% 300%;
+  animation: gradientShift 6s ease infinite;
+}
+
+.verify .spinner {
+  width: 100px;
+  height: 100px;
+  place-self: center;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite, pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
