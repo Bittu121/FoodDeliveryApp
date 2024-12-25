@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RiShoppingBag4Fill } from "react-icons/ri";
-import { StoreContext } from "../../context/StoreContext";
+import { StoreContext } from "../../context/StoreContext.jsx";
 import { assets } from "../../assets/frontend_assets/assets";
 import { HiOutlineLogout } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
