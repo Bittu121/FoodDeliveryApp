@@ -1,1 +1,1 @@
-export const url = "http://localhost:3000";
+export const url = "https://fooddeliveryapp-backend-3t9h.onrender.com";
