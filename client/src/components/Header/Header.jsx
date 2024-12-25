@@ -1,24 +1,3 @@
-// import React from "react";
-// import "./Header.css";
-
-// function Header() {
-//   return (
-//     <>
-//       <div className="header">
-//         <div className="header-contents">
-//           <h2>Order your favorite food now</h2>
-//           <p>
-//             Choose from a menu of delicious dishes made with the finest
-//             ingredients.
-//           </p>
-//           <button>View Menu</button>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-// export default Header;
 import React, { useEffect, useState } from "react";
 import { WiStars } from "react-icons/wi";
 import "./Header.css";
@@ -53,7 +32,6 @@ function Header() {
           Choose from a menu of delicious dishes made with the finest
           ingredients.
         </p>
-        {/* <button>View Menu</button> */}
       </div>
 
       {/* Render snowflakes */}
