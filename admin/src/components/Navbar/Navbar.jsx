@@ -1,17 +1,13 @@
 import React from "react";
 import "./Navbar.css";
-import { assets } from "../../assets/assets.js";
+import { CgProfile } from "react-icons/cg";
 
 function Navbar() {
   return (
     <>
       <div className="navbar">
         <h2 className="logo">QEats</h2>
-        <img
-          className="profile"
-          src={assets.profile_image}
-          alt="profile-image"
-        />
+        <CgProfile size={30} className="profile" />
       </div>
     </>
   );
